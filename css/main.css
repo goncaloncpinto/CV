@@ -5,3 +5,8 @@ nav {
 .row-fluid div div {
     padding: 10px;
 }
+
+#goncalo_logo {
+    position: absolute;
+    float: left;
+}
