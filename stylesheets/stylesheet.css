@@ -15,6 +15,35 @@ a {
   a:hover {
     text-decoration: underline; }
 
+ul {
+    padding: 4rem 0rem;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    width: 19.5%;
+    color: #159957;
+    text-align: center
+}
+
+ul li span {
+    font-size: 2.7rem;
+    color: #ee5353;
+}
+
+#home-article {
+    padding: 0.5rem 1rem;
+    background: url("../images/homeimg.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-position:center;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -41,7 +70,12 @@ a {
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
     padding: 0.6rem 0.9rem;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; } 
+    ul li {font-size: 2rem; text-align: ; width: 100%; display: block; text-align: left;
+    padding-left: 36%;}
+    ul li span {font-size: 2.5rem;}
+    ul {padding: 0.5rem 1rem;}
+}
 
 @media screen and (max-width: 42em) {
   .btn {
@@ -51,13 +85,18 @@ a {
     font-size: 0.9rem; }
     .btn + .btn {
       margin-top: 1rem;
-      margin-left: 0; } }
+      margin-left: 0; } 
+    ul {display: none;}
+    #home-article {padding: 1.5rem 1rem;}
+}
 
 .page-header {
   color: #fff;
   text-align: center;
   background-color: #888888;
-  background-image: linear-gradient(120deg, #454599, #005040);}
+  background-image: linear-gradient(120deg, #355599, #006030);
+  box-shadow: 3px 3px 15px #333;
+}
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -236,9 +275,12 @@ a {
     font-size: 1rem; } }
 
 .site-footer {
-  padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  padding: 2rem;
+  border-top: solid 1px #eff0f1; 
+  background-image: linear-gradient(120deg, #444444, #111111);
+  box-shadow: 3px 3px 15px #333;
+}
 
 .site-footer-owner {
   display: block;
