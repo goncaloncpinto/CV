@@ -11,7 +11,7 @@ body {
     color: #505c61; }
 
 a {
-    color: #1e6bb8;
+    color: #3e8bd8;
     text-decoration: none; }
 a:hover {
     text-decoration: underline; }
@@ -385,15 +385,22 @@ h3:after {
     margin-top: 2rem;
     padding: 2rem;
     border-top: solid 1px #eff0f1; 
-    background-image: linear-gradient(120deg, #444444, #111111);
+    background: -moz-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+    background: linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+    background: url("../images/background.png") center #256;
+    background-size: cover;
     box-shadow: 3px 3px 15px #333;}
 
 .site-footer-owner {
+    color: #a1b1b8;
     display: block;
     font-weight: bold; }
 
 .site-footer-credits {
-    color: #819198; }
+    color: #a1b1b8; }
 
 @media screen and (min-width: 64em) {
     .site-footer {
