@@ -7,7 +7,8 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  background: #dde;
+  color: #505c61; }
 
 a {
   color: #1e6bb8;
@@ -34,6 +35,15 @@ a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
+
+@media print {
+    .btn, footer {display: none;}
+}
+
+.main-content {
+    background: #ebf0f0;
+    box-shadow: 3px 3px 15px #333;}
+}
 
 .main-content p {
   margin-bottom: 1em; }
@@ -73,6 +83,12 @@ ul.sub-list {
     list-style: inside square;
     padding-left: 8.5rem;}
 
+p.languages{
+    padding-left: 2rem;
+}
+
+ul.languages {list-style: square inside; padding-left: 3.5rem;}
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
@@ -108,9 +124,15 @@ ul.sub-list {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #888888;
-  background-image: linear-gradient(120deg, #355599, #006030);
-  box-shadow: 3px 3px 15px #333;}
+  background: -moz-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+background: -webkit-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+background: -o-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+background: linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+    background: url("../images/background.png") center #256;
+    background-size: cover;
+    box-shadow: 3px 3px 15px #333;
+}
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -124,24 +146,32 @@ ul.sub-list {
   .page-header {
     padding: 1rem 0.8rem; } }
 
+.logo {
+    position: absolute;
+    padding: 5px;
+    background: #dde;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
 #goncalo_logo {
+    position: relative;
     float: left;}
 
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem; 
-  padding-right: 113px;}
+  padding-right: 7rem;}
 
 .project-tagline2 {
     padding-right: 113px;}
 
 @media screen and (min-width: 64em) {
   .project-name {
-    font-size: 3.25rem; } }
+    font-size: 3.49rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
-    font-size: 2.25rem; } }
+    font-size: 3.25rem; } }
 
 @media screen and (max-width: 42em) {
   .project-name {
@@ -177,8 +207,29 @@ ul.sub-list {
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-weight: normal;
-  color: #159957; }
+  font-weight: bold;
+  color: #ddffff; }
+
+h3 {
+    position: relative;
+    margin-left: -8rem;
+    padding: 0.7rem 3rem;
+    background: #b66;
+    margin-right: 30rem;
+    box-shadow: 3px 3px 5px #999
+}
+
+h3:after {
+	content: ' ';
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: 0px;
+	top: 100%;
+	border-width: 5px 1rem;
+	border-style: solid;
+	border-color: #777 #777 transparent transparent;
+}
 
 .main-content code {
   padding: 2px 4px;
@@ -295,12 +346,26 @@ ul.sub-list {
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main-content {
     padding: 2rem 4rem;
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; } 
+  h3 {
+    margin-left: -4rem;
+    margin-right: 0;
+    padding-left: 1.55rem;
+    margin-right: 30%;}
+    h3:after {display: none;}}
 
 @media screen and (max-width: 42em) {
   .main-content {
     padding: 2rem 1rem;
-    font-size: 1rem; } }
+    font-size: 1rem; } 
+  .logo {
+    position: relative;  
+    }
+  h3 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0.2rem 0.75rem;}
+  h3:after {display: none;}}
 
 .site-footer {
   margin-top: 2rem;
@@ -327,3 +392,10 @@ ul.sub-list {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+@media print {
+    .page-header {
+        color: #000;
+        box-shadow: none;
+    }
+}
