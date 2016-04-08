@@ -1,4 +1,3 @@
-@media print {
 * {
   box-sizing: border-box; }
 
@@ -8,42 +7,13 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71; }
+  color: #505c61; }
 
 a {
   color: #1e6bb8;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
-
-ul {
-    padding: 4rem 0rem;
-    margin: 0;
-}
-
-ul li {
-    list-style: none;
-    display: inline-block;
-    width: 19.5%;
-    color: #159957;
-    text-align: center
-}
-
-ul li span {
-    font-size: 2.7rem;
-    color: #ee5353;
-}
-
-#home-article {
-    padding: 0.5rem 1rem;
-    background: url("../images/homeimg.jpg");
-    background-repeat:no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size:cover;
-    background-position:center;
-}
 
 .btn {
   display: inline-block;
@@ -55,6 +25,7 @@ ul li span {
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+
   .btn + .btn {
     margin-left: 1rem; }
 
@@ -64,18 +35,74 @@ ul li span {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+@media print {
+    .btn, footer {display: none;}
+}
+
+.main-content p {
+  margin-bottom: 1em; }
+
+ul.mainlist {padding-left: 1em;}
+
+ul {
+    list-style: none;
+    padding: 0px;}
+
+ul span.date {
+    font-size: 0.9rem;
+    display: inline-block;
+    width: 8.5rem;}
+
+ul span.education-title {font-weight: bold;}
+
+p.skills {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+p.title-certification {
+    margin: 0; 
+    padding-left: 8.5rem; 
+    font-style: italic; 
+    font-weight: bold; 
+    color: #999}
+
+ul li {margin-bottom: 1.5rem;}
+
+ul li ul li {
+    margin-bottom: 0;
+}
+
+ul.sub-list {
+    list-style: inside square;
+    padding-left: 8.5rem;}
+
+p.languages{
+    padding-left: 2rem;
+}
+
+ul.languages {list-style: square inside; padding-left: 3.5rem;}
+
 @media screen and (min-width: 64em) {
   .btn {
     padding: 0.75rem 1rem; } }
+
+@media screen and (max-width: 64em) {
+  ul span.date {
+    display: block;}
+  ul span.education-title {padding-left: 1rem; font-size: 1.01rem}
+  p.title-certification {
+      padding-left: 1rem; font-size: 1rem}
+  ul.sub-list {
+    list-style: inside square;
+    padding-left: 1rem;}
+    ul span.date {margin-bottom: 0.5rem; font-weight: bold}
 }
+
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
     padding: 0.6rem 0.9rem;
-    font-size: 0.9rem; } 
-    ul li {font-size: 2rem; text-align: ; width: 100%; display: block; text-align: left;
-    padding-left: 36%;}
-    ul li span {font-size: 2.5rem;}
-    ul {padding: 0.5rem 1rem;}
+    font-size: 0.9rem; }    
 }
 
 @media screen and (max-width: 42em) {
@@ -86,18 +113,14 @@ ul li span {
     font-size: 0.9rem; }
     .btn + .btn {
       margin-top: 1rem;
-      margin-left: 0; } 
-    ul {display: none;}
-    #home-article {padding: 1.5rem 1rem;}
-}
+      margin-left: 0; }}
 
 .page-header {
   color: #fff;
   text-align: center;
   background-color: #888888;
   background-image: linear-gradient(120deg, #355599, #006030);
-  box-shadow: 3px 3px 15px #333;
-}
+  box-shadow: 3px 3px 15px #333;}
 
 @media screen and (min-width: 64em) {
   .page-header {
@@ -112,25 +135,23 @@ ul li span {
     padding: 1rem 0.8rem; } }
 
 #goncalo_logo {
-    float: left;
-}
+    float: left;}
 
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem; 
-  padding-right: 113px;}
+  padding-right: 7rem;}
 
 .project-tagline2 {
-    padding-right: 113px;
-}
+    padding-right: 113px;}
 
 @media screen and (min-width: 64em) {
   .project-name {
-    font-size: 3.25rem; } }
+    font-size: 3.49rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
-    font-size: 2.25rem; } }
+    font-size: 3.25rem; } }
 
 @media screen and (max-width: 42em) {
   .project-name {
@@ -138,9 +159,7 @@ ul li span {
   #goncalo_logo {
     float: none;}
   .project-name, .project-tagline2 {
-    padding-right: 0px;}
-    
-}
+    padding-right: 0px;}}
 
 .project-tagline, .project-tagline2 {
   margin-bottom: 2rem;
@@ -161,15 +180,16 @@ ul li span {
 
 .main-content :first-child {
   margin-top: 0; }
+
 .main-content img {
   max-width: 100%; }
+
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
   color: #159957; }
-.main-content p {
-  margin-bottom: 1em; }
+
 .main-content code {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -177,6 +197,7 @@ ul li span {
   color: #383e41;
   background-color: #f3f6fa;
   border-radius: 0.3rem; }
+
 .main-content pre {
   padding: 0.8rem;
   margin-top: 0;
@@ -187,6 +208,7 @@ ul li span {
   background-color: #f3f6fa;
   border: solid 1px #dce6f0;
   border-radius: 0.3rem; }
+
   .main-content pre > code {
     padding: 0;
     margin: 0;
@@ -196,17 +218,20 @@ ul li span {
     white-space: pre;
     background: transparent;
     border: 0; }
+
 .main-content .highlight {
   margin-bottom: 1rem; }
   .main-content .highlight pre {
     margin-bottom: 0;
     word-break: normal; }
+
 .main-content .highlight pre, .main-content pre {
   padding: 0.8rem;
   overflow: auto;
   font-size: 0.9rem;
   line-height: 1.45;
   border-radius: 0.3rem; }
+
 .main-content pre code, .main-content pre tt {
   display: inline;
   max-width: initial;
@@ -217,40 +242,52 @@ ul li span {
   word-wrap: normal;
   background-color: transparent;
   border: 0; }
-  .main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
+
+.main-content pre code:before, .main-content pre code:after, .main-content pre tt:before, .main-content pre tt:after {
     content: normal; }
+
 .main-content ul, .main-content ol {
   margin-top: 0; }
+
 .main-content blockquote {
   padding: 0 1rem;
   margin-left: 0;
   color: #819198;
   border-left: 0.3rem solid #dce6f0; }
+
   .main-content blockquote > :first-child {
     margin-top: 0; }
+
   .main-content blockquote > :last-child {
     margin-bottom: 0; }
+
 .main-content table {
   display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
   word-break: keep-all; }
+
   .main-content table th {
     font-weight: bold; }
+
   .main-content table th, .main-content table td {
     padding: 0.5rem 1rem;
     border: 1px solid #e9ebec; }
+
 .main-content dl {
   padding: 0; }
+
   .main-content dl dt {
     padding: 0;
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: bold; }
+
   .main-content dl dd {
     padding: 0;
     margin-bottom: 1rem; }
+
 .main-content hr {
   height: 2px;
   padding: 0;
@@ -280,8 +317,7 @@ ul li span {
   padding: 2rem;
   border-top: solid 1px #eff0f1; 
   background-image: linear-gradient(120deg, #444444, #111111);
-  box-shadow: 3px 3px 15px #333;
-}
+  box-shadow: 3px 3px 15px #333;}
 
 .site-footer-owner {
   display: block;
@@ -301,3 +337,10 @@ ul li span {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+@media print {
+    .page-header {
+        color: #000;
+        box-shadow: none;
+    }
+}
