@@ -18,17 +18,19 @@ a:hover {
 
 .btn {
     display: inline-block;
+    margin-right: 1rem;
     margin-bottom: 0.5rem;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
     border-width: 1px;
+    width: 23rem;
     border-radius: 0.3rem;
     transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
 
 .btn + .btn {
-    margin-left: 1rem; }
+    margin-right: 1rem; }
 
 .btn:hover {
     color: rgba(255, 255, 255, 1);
@@ -83,6 +85,7 @@ p.languages{
     padding-left: 2rem;}
 
 ul.languages {list-style: square inside; padding-left: 3.5rem;}
+ul.languages li {margin: 0;}
 
 @media screen and (min-width: 64em) {
     .btn {
@@ -117,7 +120,6 @@ ul.languages {list-style: square inside; padding-left: 3.5rem;}
 .page-header {
     color: #fff;
     text-align: center;
-    /* A6A6EB - 78A778 - lighter */
     /* 7474B9 - 467546 - light */
     background: -moz-linear-gradient(45deg, rgba(116,116,185,1) 0%, rgba(70,117,70,1) 100%);
     background: -webkit-linear-gradient(45deg, rgba(116,116,185,1) 0%, rgba(70,117,70,1) 100%);
@@ -130,7 +132,7 @@ ul.languages {list-style: square inside; padding-left: 3.5rem;}
 
 @media screen and (min-width: 64em) {
     .page-header {
-        padding: 2rem 4rem; } }
+        padding: 2rem 4rem 1rem 4rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
     .page-header {
@@ -210,6 +212,8 @@ i {padding-right: 1rem;}
     .project-tagline2 {font-size: 2.25rem; }}
 
 @media screen and (max-width: 42em) {
+    .left-aligned {float: none;}
+    .right-aligned {float: none;}
     .project-tagline2 {
         font-size: 2rem; margin: 0.9rem}
     
@@ -383,6 +387,6 @@ h3:after {
     h3:after {display: none;}}
 
 @media print {
-    .page-header {
+    .page-header, .main-content {
         color: #000;
         box-shadow: none;}}
