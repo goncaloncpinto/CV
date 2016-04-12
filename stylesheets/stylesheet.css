@@ -18,8 +18,8 @@ a:hover {
 
 .btn {
     display: inline-block;
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
     background-color: rgba(255, 255, 255, 0.08);
     border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
@@ -31,13 +31,13 @@ a:hover {
     margin-left: 1rem; }
 
 .btn:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3); }
 
 @media print {
-    .btn, footer {display: none;}}
+    .btn {display: none;}}
 
 .main-content {
     background: #ebf0f0;
@@ -117,11 +117,13 @@ ul.languages {list-style: square inside; padding-left: 3.5rem;}
 .page-header {
     color: #fff;
     text-align: center;
-    background: -moz-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
+    /* A6A6EB - 78A778 - lighter */
+    /* 7474B9 - 467546 - light */
+    background: -moz-linear-gradient(45deg, rgba(116,116,185,1) 0%, rgba(70,117,70,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(116,116,185,1) 0%, rgba(70,117,70,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(116,116,185,1) 0%, rgba(70,117,70,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(116,116,185,1) 0%, rgba(70,117,70,1) 100%);
+    background: linear-gradient(45deg, rgba(116,116,185,1) 0%, rgba(70,117,70,1) 100%);
     background: url("../images/background.png") center #256;
     background-size: cover;
     box-shadow: 3px 3px 15px #333;}
@@ -137,16 +139,6 @@ ul.languages {list-style: square inside; padding-left: 3.5rem;}
 @media screen and (max-width: 42em) {
     .page-header {
         padding: 1rem 0.8rem; } }
-
-.logo {
-    position: absolute;
-    padding: 15px;
-/*    background-color: rgba(255, 255, 255, 0.08);*/
-}
-
-#goncalo_logo {
-    position: relative;
-    float: left;}
 
 .project-name {
     text-align: center;
@@ -184,32 +176,44 @@ ul.languages {list-style: square inside; padding-left: 3.5rem;}
 
 i {padding-right: 1rem;}
 
-.project-tagline2 {
-    margin: 2rem auto;}
-
 @media screen and (min-width: 64em) {
     .project-name {
         font-size: 3.49rem; } }
 
-@media screen and (max-width: 42em) {
-    #goncalo_logo {
-        float: none;}}
+.left-aligned {position: relative; float: left;}
+.right-aligned {position: relative; float: right;}
+.left-aligned p, .right-aligned p {padding:0; margin: 0;}
+.myContacts {
+    max-width: 64rem;
+    padding: 0 1rem;
+    margin: 0 auto;  
+    text-align: left;}
+.btn-div {margin: 0; padding: 0; padding-top: 1rem;clear: both;}
 
-.project-tagline, .project-tagline2 {
-    margin-bottom: 2rem;
+.project-tagline {
+    margin-bottom: 1rem;
     font-weight: normal;
-    opacity: 0.7; }
+    opacity: 1; }
+
+.project-tagline2 {
+    font-weight: bold;
+    padding: 0; margin: 0; margin-top: 0.5rem;}
 
 @media screen and (min-width: 64em) {
-    .project-tagline, .project-tagline2 {
-        font-size: 1.25rem; } }
+    .project-tagline {font-size: 1.25rem; } 
+    .project-tagline2 {font-size: 2.45rem; }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
-    .project-tagline, .project-tagline2 {
-        font-size: 1.15rem; } }
+    .project-tagline{
+        font-size: 1.15rem; } 
+    .project-tagline2 {font-size: 2.25rem; }}
 
 @media screen and (max-width: 42em) {
-    .project-tagline, .project-tagline2 {
+    .project-tagline2 {
+        font-size: 2rem; margin: 0.9rem}
+    
+    .project-tagline {
         font-size: 1rem; margin: 0.9rem} }
 
 .main-content :first-child {
@@ -372,47 +376,11 @@ h3:after {
         padding: 2rem 1rem;
         font-size: 1rem; }
 
-    .logo {
-        position: relative;}
-
     h3 {
         margin-left: 0;
         margin-right: 0;
         padding: 0.2rem 0.75rem;}
     h3:after {display: none;}}
-
-.site-footer {
-    margin-top: 2rem;
-    padding: 2rem;
-    border-top: solid 1px #eff0f1; 
-    background: -moz-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: linear-gradient(45deg, rgba(66,66,135,1) 0%, rgba(20,67,20,1) 100%);
-    background: url("../images/background.png") center #256;
-    background-size: cover;
-    box-shadow: 3px 3px 15px #333;}
-
-.site-footer-owner {
-    color: #a1b1b8;
-    display: block;
-    font-weight: bold; }
-
-.site-footer-credits {
-    color: #a1b1b8; }
-
-@media screen and (min-width: 64em) {
-    .site-footer {
-        font-size: 1rem; } }
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-    .site-footer {
-        font-size: 1rem; } }
-
-@media screen and (max-width: 42em) {
-    .site-footer {
-        font-size: 0.9rem; } }
 
 @media print {
     .page-header {
